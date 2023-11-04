@@ -1,0 +1,23 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background shape with rounded corners -->
+    <item>
+        <shape
+            android:shape="rectangle">
+
+            <!-- Corner radii: Top-left, top-right, bottom-right, bottom-left -->
+            <corners
+                android:topLeftRadius="20dp"
+                android:topRightRadius="20dp"
+                android:bottomRightRadius="20dp"
+                android:bottomLeftRadius="20dp" />
+
+            <!-- Add your desired background color here -->
+            <solid android:color="@color/bg_gray" />
+
+        </shape>
+    </item>
+
+    <!-- Content: Add your content here if needed -->
+
+</layer-list>

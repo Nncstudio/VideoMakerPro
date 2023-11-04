@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MSVideoMaker" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/bg_color</item>
+        <item name="colorPrimaryVariant">@color/bg_color</item>
+        <item name="colorOnPrimary">@color/bg_color</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/bg_color</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >@color/bg_black</item>
+        <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/myfont</item>
+    </style>
+</resources>

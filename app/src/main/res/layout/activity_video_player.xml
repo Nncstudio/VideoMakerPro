@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <FrameLayout
+        android:id="@id/videoView_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <VideoView
+            android:id="@id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@id/toolBarShare"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <ImageView
+            android:id="@id/btnBackFinal"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/_14sdp"
+            android:src="@drawable/ic_arrow_back_24dp"  />
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/toolBarShare"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <ImageView
+            android:id="@+id/btnBackFinal"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/_14sdp"
+            android:src="@drawable/ic_arrow_back_24dp" />
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_320sdp">
+
+
+                <RelativeLayout
+                    android:id="@+id/rlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:elevation="0.0dip"
+                    app:cardCornerRadius="3.0dip">
+
+                    <ImageView
+                        android:id="@id/videoView_thumbnail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/playImg"
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="@dimen/_32sdp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_play" />
+
+
+                </RelativeLayout>
+
+
+
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                >
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saved!"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13sdp"
+                    />
+
+                <TextView
+                    android:layout_below="@+id/txt"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:id="@+id/txt_path"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bright_foreground_disabled_material_dark"
+                    android:textStyle="bold"
+                    />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@id/share_container_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="4.8">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="12.0dip"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@id/btnWhatsApp"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:background="?selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:src="@drawable/ic_whatsapp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="12.0dip"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@id/btnFacebook"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:background="?selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:src="@drawable/ic_facebook2" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="12.0dip"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@id/btnInstagram"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:background="?selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:src="@drawable/ic_instagram" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="12.0dip"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@id/btnTwitter"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:background="?selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:src="@drawable/ic_twitter" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="4.8">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="12.0dip"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@id/btnGmail"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:background="?selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:src="@drawable/ic_gmail2" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="12.0dip"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@id/btnMessenger"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:background="?selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:src="@drawable/ic_messenger" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="12.0dip"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@id/btnYoutube"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="?selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:src="@drawable/ic_youtube" />
+
+                            <TextView
+                                style="@style/TextBelowImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5.0dip"
+                                android:text="YouTube"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_8sdp"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="12.0dip"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+
+
+
+                            <ImageView
+                                android:id="@id/btnShareMore"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_gravity="center"
+                                android:background="?selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:src="@drawable/share" />
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/share_card"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_320sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="8.0dip"
+                app:cardBackgroundColor="@color/bg_gray"
+                app:cardCornerRadius="8.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/com_facebook_loading"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+
+                <include layout="@layout/layout_ads_big" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="style">
+        <item>Gray</item>
+        <item>Relief</item>
+        <item>Average blur</item>
+        <item>Oil painting</item>
+        <item>Neon</item>
+        <item>Pixelate</item>
+        <item>Old TV</item>
+        <item>Invert the colors</item>
+        <item>Block</item>
+        <item>old photo</item>
+        <item>sharpen</item>
+        <item>light</item>
+        <item>Lomo</item>
+        <item>HDR</item>
+        <item>gaussian blur</item>
+        <item>soft glow</item>
+        <item>sketch style</item>
+        <item>Motion blur</item>
+        <item>Gotham style</item>
+    </string-array>
+
+    <array name="array_sort_value">
+        <item>Name</item>
+        <item>Size</item>
+        <item>Date</item>
+    </array>
+
+    <string-array name="fonts">
+
+        <item>Blessd</item>
+
+        <item>Fancy</item>
+        <item>Fon</item>
+        <item>Homestile</item>
+        <item>Personaluse</item>
+        <item>Smartwatch</item>
+
+    </string-array>
+
+    <array name="ratings_array">
+        <item>4.1</item>
+        <item>4.2</item>
+        <item>4.3</item>
+        <item>4.4</item>
+        <item>4.5</item>
+        <item>4.6</item>
+        <item>4.7</item>
+        <item>4.8</item>
+        <item>4.9</item>
+    </array>
+    <array name="video_height_width">
+        <item>1920*1080</item>
+        <item>1280*720</item>
+        <item>720*480</item>
+        <item>640*360</item>
+        <item>320*240</item>
+    </array>
+    <array name="video_resolution">
+        <item>1080p Full HD</item>
+        <item>720p HD</item>
+        <item>480p</item>
+        <item>360p</item>
+        <item>240p</item>
+    </array>
+</resources>

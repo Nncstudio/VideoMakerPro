@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--max ad banner height-->
+    <dimen name="banner_height">50dp</dimen>
+
+
+    <declare-styleable name="StickerView">
+        <attr name="showIcons" format="boolean" />
+        <attr name="showBorder" format="boolean" />
+        <attr name="bringToFrontCurrentSticker" format="boolean" />
+        <attr name="borderColor" format="color"/>
+        <attr name="borderAlpha" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="ToggleImageButton">
+        <attr name="tib_drawable_on" format="reference" />
+        <attr name="tib_drawable_off" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CropImageView">
+        <attr name="cropMaskColor" format="color"/>
+        <attr name="cropBorderColor" format="color"/>
+        <attr name="cropBorderWidth" format="dimension"/>
+        <attr name="cropFocusWidth" format="dimension"/>
+        <attr name="cropFocusHeight" format="dimension"/>
+        <attr name="cropStyle" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="circle" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <attr name="anim_direction">
+        <enum name="negative" value="2" />
+        <enum name="positive" value="1" />
+    </attr>
+    <attr name="anim_duration" format="integer" />
+
+    <attr name="bg_color" format="color" />
+
+    <attr name="btn_color" format="color" />
+
+    <attr name="datumRatio">
+        <enum name="datumAuto" value="0" />
+        <enum name="datumHeight" value="2" />
+        <enum name="datumWidth" value="1" />
+    </attr>
+
+    <attr name="gap_width" format="reference|dimension" />
+    <attr name="gnt_template_type" format="reference" />
+
+    <attr name="heightRatio" format="float" />
+    <attr name="layoutAspectRatio" format="float" />
+
+    <attr name="layoutSquare" format="boolean" />
+
+    <attr name="photo_src" format="integer" />
+
+
+
+    <attr name="rt_backgroundColor" format="color" />
+    <attr name="rt_backgroundPressColor" format="color" />
+    <attr name="rt_cornerRadius" format="dimension" />
+    <attr name="rt_cornerRadius_BL" format="integer" />
+    <attr name="rt_cornerRadius_BR" format="integer" />
+    <attr name="rt_cornerRadius_TL" format="integer" />
+    <attr name="rt_cornerRadius_TR" format="integer" />
+    <attr name="rt_isRadiusHalfHeight" format="boolean" />
+    <attr name="rt_isRippleEnable" format="boolean" />
+    <attr name="rt_isWidthHeightEqual" format="boolean" />
+    <attr name="rt_strokeColor" format="integer" />
+    <attr name="rt_strokePressColor" format="integer" />
+    <attr name="rt_strokeWidth" format="dimension" />
+    <attr name="rt_textPressColor" format="integer" />
+    <attr name="rv_backgroundColor" format="color" />
+    <attr name="rv_backgroundPressColor" format="color" />
+    <attr name="rv_cornerRadius" format="dimension" />
+    <attr name="rv_cornerRadius_BL" format="integer" />
+    <attr name="rv_cornerRadius_BR" format="integer" />
+    <attr name="rv_cornerRadius_TL" format="integer" />
+    <attr name="rv_cornerRadius_TR" format="integer" />
+    <attr name="rv_isRadiusHalfHeight" format="boolean" />
+    <attr name="rv_isRippleEnable" format="boolean" />
+    <attr name="rv_isWidthHeightEqual" format="boolean" />
+    <attr name="rv_strokeColor" format="integer" />
+    <attr name="rv_strokePressColor" format="integer" />
+    <attr name="rv_strokeWidth" format="dimension" />
+
+    <attr name="shape_arc_height" format="dimension" />
+    <attr name="shape_arc_position">
+        <enum name="bottom" value="1" />
+        <enum name="left" value="3" />
+        <enum name="right" value="4" />
+        <enum name="top" value="2" />
+    </attr>
+    <attr name="shape_circle_borderColor" format="color" />
+    <attr name="shape_circle_borderWidth" format="dimension" />
+    <attr name="shape_clip_drawable" format="reference" />
+
+    <attr name="shape_polygon_noOfSides" format="integer" />
+    <attr name="shape_roundRect_borderColor" format="color" />
+    <attr name="shape_roundRect_borderWidth" format="dimension" />
+    <attr name="shape_roundRect_bottomLeftRadius" format="dimension" />
+    <attr name="shape_roundRect_bottomRightRadius" format="dimension" />
+    <attr name="shape_roundRect_topLeftRadius" format="dimension" />
+    <attr name="shape_roundRect_topRightRadius" format="dimension" />
+    <attr name="shape_star_noOfPoints" format="integer" />
+    <attr name="shape_triangle_percentBottom" format="float" />
+    <attr name="shape_triangle_percentLeft" format="float" />
+    <attr name="shape_triangle_percentRight" format="float" />
+
+    <attr name="space_padding" format="reference|dimension" />
+
+    <attr name="widthRatio" format="float" />
+
+</resources>

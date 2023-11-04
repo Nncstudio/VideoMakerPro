@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:padding="5.0dip">
+
+    <LinearLayout
+        android:id="@+id/layoutRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_weight="0.3"
+            android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/icon_album"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:scaleType="centerCrop" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_album"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="Name album"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/path_album"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:gravity="center|left"
+                android:text="sdcard/photo/0/new"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iconNext"-->
+            <!--android:layout_width="20.0dip"-->
+            <!--android:layout_height="20.0dip"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/piclist_icon_next" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="1.0px"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="#ffe4e4e4" />-->
+    </LinearLayout>
+</RelativeLayout>

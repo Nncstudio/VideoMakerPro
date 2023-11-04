@@ -1,0 +1,29 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape with gradient -->
+    <item>
+        <shape
+            android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:startColor="@color/bg_purpal"
+                android:endColor="#5134D5"
+                android:angle="45"/>
+            <corners
+                android:radius="16dp" />
+        </shape>
+    </item>
+
+    <!-- Content placeholder (this will be the actual content of your view) -->
+    <item
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp">
+        <shape
+            android:shape="rectangle">
+
+            <corners
+                android:radius="8dp" />
+        </shape>
+    </item>
+</layer-list>

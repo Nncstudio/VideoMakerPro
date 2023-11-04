@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dist="http://schemas.android.com/apk/distribution">
+    <item android:state_selected="true" >
+        <bitmap android:src="@drawable/ic_text_shadow_onn"
+            android:tint="@color/white"/>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/ic_text_shadow_off"
+            android:tint="@color/tab_white"/>
+    </item>
+</selector>

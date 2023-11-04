@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTuneProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <com.video.maker.view.CustomSeekBar
+        android:id="@+id/seekbar_tune"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@android:color/transparent"
+        android:thumbTint="@color/white"
+        android:progressTint="@color/white"
+        android:progressBackgroundTint="@color/gray"/>
+</LinearLayout>

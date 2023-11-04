@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/text_tool_top_height"
+    android:background="@color/test"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.video.photoeditor.view.RoundFrameLayout
+        android:id="@+id/btn_picker_color_shadow"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="12dp"
+        android:clickable="true"
+        android:padding="3dp"
+        app:rv_backgroundColor="#000000"
+        app:rv_cornerRadius="3dp"
+        app:rv_strokeColor="@color/icChecked"
+        app:rv_strokeWidth="2dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_pencil" />
+    </com.video.photoeditor.view.RoundFrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvRadius"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_tool_top_height_half"
+            android:gravity="center"
+            android:text="Radius"
+            android:textColor="@android:color/white" />
+
+        <SeekBar
+            android:id="@+id/sb_dRadius_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_tool_top_height_half"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/tvRadius" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_tool_top_height_half"
+            android:layout_below="@+id/tvRadius"
+            android:gravity="center"
+            android:text="Dy"
+            android:textColor="@android:color/white" />
+
+        <SeekBar
+            android:id="@+id/sb_Dy_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_tool_top_height_half"
+            android:layout_below="@+id/tvRadius"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/tvRadius" />
+    </RelativeLayout>
+</LinearLayout>

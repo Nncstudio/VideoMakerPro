@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="78.0dip"
+    android:layout_height="78.0dip"
+    android:layout_marginLeft="3.0dip"
+    android:layout_marginTop="6.0dip"
+    android:layout_marginRight="3.0dip"
+    android:layout_marginBottom="6.0dip"
+    android:background="?selectableItemBackgroundBorderless"
+    android:clickable="true"
+    app:cardBackgroundColor="@color/bg_gray"
+    app:cardCornerRadius="4.0dip"
+    app:cardUseCompatPadding="false">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+
+        <com.video.maker.view.SquareImageView
+            android:id="@id/imgMusic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+
+        <TextView
+            android:id="@id/nameMusic"
+            style="@style/TextBelowImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Happy"
+            android:textStyle="bold"/>
+
+        <com.video.maker.view.SquareImageView
+            android:id="@id/imgUnChecked"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_music_uncheck_shape"
+            android:visibility="visible" />
+
+
+        <ImageView
+            app:tint="@color/bg_purpal"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:padding="7dp"
+            android:layout_gravity="center"
+            android:src="@drawable/video_ad"
+            android:background="@drawable/ic_cercle"
+
+            android:id="@+id/premium"
+            />
+
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

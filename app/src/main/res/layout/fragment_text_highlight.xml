@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/text_tool_top_height"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="vertical">
+
+        <com.video.photoeditor.view.RoundFrameLayout
+            android:id="@+id/btn_picker_color_highlight"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:padding="3dp"
+            app:rv_cornerRadius="3dp"
+            app:rv_strokeColor="@color/white"
+            app:rv_strokeWidth="2dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_pencil" />
+        </com.video.photoeditor.view.RoundFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_color_highlight"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_picker_color_highlight" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_opacity" />
+
+            <SeekBar
+                android:id="@+id/sbTranparencyHighlight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:progressBackgroundTint="@color/white"
+                android:progressTint="@color/white"
+                android:thumbTint="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_radius" />
+
+            <SeekBar
+                android:id="@+id/sbRadius"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progressBackgroundTint="@color/white"
+                android:progressTint="@color/white"
+                android:thumbTint="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
